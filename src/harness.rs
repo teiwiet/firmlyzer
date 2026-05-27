@@ -12,19 +12,31 @@ pub enum RunResult {
 
 pub struct Harness {
     pub binary: String,
+    pub args: Vec<String>,
     pub timeout_ms: u64,
 }
 
 impl Harness {
-    pub fn new(binary: &str, timeout_ms: u64) -> Self {
+    pub fn new(binary: &str, args: Vec<&str>, timeout_ms: u64) -> Self {
         Self {
             binary: binary.to_string(),
+            args: args.iter().map(|s| s.to_string()).collect(),
             timeout_ms,
         }
     }
 
     pub fn run(&self, input: &[u8]) -> RunResult {
-        let mut child = match Command::new(&self.binary).stdin(Stdio::piped()).stdout(Stdio::null()).stderr(Stdio::null()).spawn() {
+        let mut cmd = Command::new(&self.binary);
+        for arg in &self.args {
+            cmd.arg(arg);
+        }
+
+        let mut child = match cmd
+            .stdin(Stdio::piped())
+            .stdout(Stdio::null())
+            .stderr(Stdio::null())
+            .spawn()
+        {
             Ok(c) => c,
             Err(e) => {
                 eprintln!("Failed to spawn : {}", e);
@@ -43,12 +55,12 @@ impl Harness {
                 child.wait().unwrap();
                 RunResult::Timeout
             }
-            Some(status)=> {
+            Some(status) => {
                 if status.success() {
                     RunResult::Ok
                 } else {
                     let code = status.code().unwrap_or(-1);
-                    RunResult::Crash {code}
+                    RunResult::Crash { code }
                 }
             }
         }
