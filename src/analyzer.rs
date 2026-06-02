@@ -1,5 +1,6 @@
 use goblin::elf::*;
 use walkdir::WalkDir;
+use std::collections::HashSet;
 use serde::{Deserialize, Serialize};
 use rayon::prelude::*;
 use std::{
@@ -41,13 +42,34 @@ pub struct BinaryReport {
 }
 
 const DANGER_FUNCS: &[&str] = &[
-    "popen", "system", "gets", "execve", "strcpy", "strcat", "sprintf", "vsprintf",
+    // --- thực thi lệnh / spawn process ---
+    "system", "popen", "wordexp",
+    "execl", "execlp", "execle", "execv", "execvp", "execvpe",
+    "execve", "execveat", "fexecve",
+    "posix_spawn", "posix_spawnp",
+    // --- copy/concat không kiểm tra biên ---
+    "strcpy", "stpcpy", "strcat", "wcscpy", "wcscat",
+    // --- format string ghi vào buffer ---
+    "sprintf", "vsprintf",
+    // --- đọc input không giới hạn độ dài (vừa source vừa sink) ---
+    "gets",
 ];
 
 const INPUT_FUNCS: &[&str] = &[
-    "recv", "recvfrom", "scanf", "read", "fread", "getevn", "fgets",
+    // --- đọc từ fd / file / stdin ---
+    "read", "pread", "readv", "preadv",
+    "fread", "fgets", "getline", "getdelim",
+    "getc", "getchar", "fgetc",
+    // --- họ scanf (đọc & parse) ---
+    "scanf", "fscanf", "sscanf",
+    "vscanf", "vfscanf", "vsscanf",
+    // --- mạng ---
+    "recv", "recvfrom", "recvmsg", "recvmmsg",
+    // --- môi trường / tham số dòng lệnh ---
+    "getenv", "secure_getenv", "getopt", "getopt_long",
+    // --- khác ---
+    "getpass", "msgrcv", "mq_receive",
 ];
-
 fn extract_names(elf: &Elf) -> Vec<String> {
     let mut names = vec![];
 
@@ -73,9 +95,9 @@ pub fn analyze_binary(path: &Path) -> Option<BinaryReport> {
     let elf = Elf::parse(&data).ok()?;
 
     let arch = Arch::from_elf_machine(elf.header.e_machine);
-
+    
     let all_names: Vec<String> = extract_names(&elf);
-
+    let all_names : HashSet<String> = extract_names(&elf).into_iter().collect();
     let danger_funcs: Vec<String> = all_names
         .iter()
         .filter(|f| DANGER_FUNCS.iter().any(|n| f.contains(n)))
