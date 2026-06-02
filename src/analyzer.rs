@@ -42,32 +42,23 @@ pub struct BinaryReport {
 }
 
 const DANGER_FUNCS: &[&str] = &[
-    // --- thực thi lệnh / spawn process ---
     "system", "popen", "wordexp",
     "execl", "execlp", "execle", "execv", "execvp", "execvpe",
     "execve", "execveat", "fexecve",
     "posix_spawn", "posix_spawnp",
-    // --- copy/concat không kiểm tra biên ---
     "strcpy", "stpcpy", "strcat", "wcscpy", "wcscat",
-    // --- format string ghi vào buffer ---
     "sprintf", "vsprintf",
-    // --- đọc input không giới hạn độ dài (vừa source vừa sink) ---
     "gets",
 ];
 
 const INPUT_FUNCS: &[&str] = &[
-    // --- đọc từ fd / file / stdin ---
     "read", "pread", "readv", "preadv",
     "fread", "fgets", "getline", "getdelim",
     "getc", "getchar", "fgetc",
-    // --- họ scanf (đọc & parse) ---
     "scanf", "fscanf", "sscanf",
     "vscanf", "vfscanf", "vsscanf",
-    // --- mạng ---
     "recv", "recvfrom", "recvmsg", "recvmmsg",
-    // --- môi trường / tham số dòng lệnh ---
     "getenv", "secure_getenv", "getopt", "getopt_long",
-    // --- khác ---
     "getpass", "msgrcv", "mq_receive",
 ];
 fn extract_names(elf: &Elf) -> Vec<String> {
