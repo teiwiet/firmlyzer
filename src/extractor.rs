@@ -1,11 +1,10 @@
 use std::fs;
-use std::path::Path;
 use std::process::Command;
 
 use regex::Regex;
 use walkdir::WalkDir;
 
-const SENSITIVE : &[&str] = &[
+const SENSITIVE: &[&str] = &[
     "passwd",
     "shadow",
     ".key",
@@ -13,18 +12,17 @@ const SENSITIVE : &[&str] = &[
     ".pem",
     "wpa_supplicant",
     "hostapd",
-    "dropbear"
+    "dropbear",
 ];
 
-pub fn extract(firmware: &str, out_dir: &str) {
-    let _ = fs::create_dir_all(out_dir);
+pub fn extract(firmware: &str) {
     let status = Command::new("binwalk")
         .arg("-e")
         .arg(firmware)
         .status()
-        .expect("Failed to read file");
-    if !status.success(){
-        eprintln!("[!] binwalk return {:?}",status.code());
+        .expect("Failed to run binwalk");
+    if !status.success() {
+        eprintln!("[!] binwalk return {:?}", status.code());
     }
 }
 
@@ -38,14 +36,16 @@ pub fn scan(dir: &str) {
         }
         let path = entry.path();
         let name = path.to_string_lossy().to_lowercase();
+
         // check extension
         for kw in SENSITIVE {
             if name.contains(kw) {
-                println!("[FILE] {}  (khớp '{}')", path.display(), kw);
+                println!("[FILE] {}", path.display());
                 break;
             }
         }
 
+        // grep nội dung
         if let Ok(bytes) = fs::read(path) {
             let text = String::from_utf8_lossy(&bytes);
             for (i, line) in text.lines().enumerate() {
