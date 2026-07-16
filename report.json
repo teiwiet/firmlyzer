@@ -1,0 +1,2243 @@
+[
+  {
+    "path": "_US_AC10V4.0si_V16.03.10.09_multi_TDE01.bin.extracted/squashfs-root/lib/libc.so",
+    "danger_funcs": [
+      "posix_spawnattr_setschedparam",
+      "posix_spawnattr_getsigdefault",
+      "pthread_attr_getstack",
+      "execvpe",
+      "sprintf",
+      "execlp",
+      "sched_getscheduler",
+      "getservbyport_r",
+      "posix_spawn_file_actions_addopen",
+      "posix_spawnattr_setpgroup",
+      "pthread_attr_getscope",
+      "getservbyport",
+      "stpcpy",
+      "getsid",
+      "execl",
+      "getspent",
+      "pthread_getspecific",
+      "posix_spawn",
+      "fgets_unlocked",
+      "__posix_spawnx",
+      "getservent",
+      "posix_spawnattr_init",
+      "posix_spawnattr_setsigdefault",
+      "getservbyname_r",
+      "__stpcpy",
+      "catgets",
+      "vasprintf",
+      "strcpy",
+      "getsockname",
+      "wcscat",
+      "getsubopt",
+      "execve",
+      "gets",
+      "posix_spawn_file_actions_addclose",
+      "posix_spawnattr_getsigmask",
+      "execv",
+      "posix_spawnp",
+      "posix_spawnattr_destroy",
+      "__execvpe",
+      "fgets",
+      "pthread_attr_getschedparam",
+      "posix_spawnattr_setflags",
+      "system",
+      "asprintf",
+      "posix_spawnattr_getpgroup",
+      "pthread_getschedparam",
+      "execvp",
+      "posix_spawn_file_actions_adddup2",
+      "getspnam",
+      "getspnam_r",
+      "getsockopt",
+      "wordexp",
+      "posix_spawn_file_actions_init",
+      "posix_spawnattr_getschedpolicy",
+      "posix_spawnattr_setschedpolicy",
+      "tcgetsid",
+      "strcat",
+      "getservbyname",
+      "wcscpy",
+      "posix_spawnattr_getflags",
+      "fexecve",
+      "fgetspent",
+      "posix_spawnattr_getschedparam",
+      "vsprintf",
+      "posix_spawn_file_actions_destroy",
+      "pthread_attr_getstacksize",
+      "pthread_attr_getschedpolicy",
+      "posix_spawnattr_setsigmask",
+      "execle",
+      "popen"
+    ],
+    "input_funcs": [
+      "pthread_attr_getinheritsched",
+      "pthread_attr_getstack",
+      "pthread_rwlockattr_destroy",
+      "__pthread_tryjoin_np",
+      "pthread_rwlockattr_init",
+      "__getdelim",
+      "pthread_mutex_lock",
+      "pthread_rwlockattr_setpshared",
+      "pthread_mutex_timedlock",
+      "__pthread_testcancel",
+      "__pthread_tsd_run_dtors",
+      "__freading",
+      "swscanf",
+      "pthread_key_create",
+      "pthread_rwlock_destroy",
+      "pthread_setcanceltype",
+      "readdir",
+      "msgrcv",
+      "pthread_cond_destroy",
+      "pthread_setname_np",
+      "pthread_attr_getscope",
+      "__posix_getopt",
+      "vfwscanf",
+      "pthread_setattr_default_np",
+      "__pthread_create",
+      "__set_thread_area",
+      "pthread_setaffinity_np",
+      "getopt",
+      "pthread_mutex_setprioceiling",
+      "pthread_self",
+      "sscanf",
+      "__pthread_mutex_trylock_owner",
+      "__pthread_once_full",
+      "__string_read",
+      "__isoc99_vfwscanf",
+      "pread",
+      "__pthread_mutex_timedlock",
+      "pthread_cond_broadcast",
+      "getc",
+      "readdir_r",
+      "__pthread_exit",
+      "vfscanf",
+      "pthread_once",
+      "pthread_barrierattr_init",
+      "pthread_getspecific",
+      "aio_read64",
+      "__pthread_join",
+      "read",
+      "__stdio_read",
+      "pthread_rwlock_timedrdlock",
+      "fgets_unlocked",
+      "pthread_condattr_destroy",
+      "__isoc99_vsscanf",
+      "readahead",
+      "pthread_rwlock_unlock",
+      "pthread_getcpuclockid",
+      "pthread_getconcurrency",
+      "getopt_long_only",
+      "fgetc",
+      "pthread_rwlock_init",
+      "__block_new_threads",
+      "pthread_setcancelstate",
+      "pthread_barrierattr_getpshared",
+      "fread",
+      "_pthread_cleanup_push",
+      "pthread_cond_wait",
+      "__isoc99_fwscanf",
+      "fread_unlocked",
+      "_IO_getc_unlocked",
+      "pthread_rwlock_trywrlock",
+      "fwscanf",
+      "pthread_equal",
+      "fscanf",
+      "ungetc",
+      "clock_getcpuclockid",
+      "vwscanf",
+      "readlink",
+      "pthread_kill",
+      "pthread_mutexattr_gettype",
+      "__isoc99_wscanf",
+      "getc_unlocked",
+      "pthread_mutexattr_settype",
+      "pthread_key_delete",
+      "__pthread_timedjoin_np",
+      "pthread_mutex_consistent",
+      "vsscanf",
+      "__isoc99_vwscanf",
+      "getline",
+      "pthread_rwlockattr_getpshared",
+      "pthread_spin_lock",
+      "getopt_long",
+      "pthread_sigmask",
+      "pthread_mutexattr_getprotocol",
+      "fgets",
+      "pthread_attr_getschedparam",
+      "getdelim",
+      "_IO_getc",
+      "__pthread_key_create",
+      "pthread_mutexattr_setrobust",
+      "pthread_condattr_setclock",
+      "pthread_getschedparam",
+      "recvmmsg",
+      "pthread_cond_init",
+      "pthread_setspecific",
+      "pthread_attr_getguardsize",
+      "pthread_cond_timedwait",
+      "pthread_attr_setschedpolicy",
+      "wscanf",
+      "pthread_mutex_getprioceiling",
+      "pthread_mutex_destroy",
+      "__dl_thread_cleanup",
+      "pthread_barrier_wait",
+      "pthread_cond_signal",
+      "pthread_condattr_init",
+      "pthread_getattr_default_np",
+      "pthread_atfork",
+      "pthread_attr_setinheritsched",
+      "pthread_barrierattr_destroy",
+      "pthread_cancel",
+      "pthread_condattr_getclock",
+      "__toread",
+      "process_vm_readv",
+      "pthread_mutexattr_destroy",
+      "pthread_attr_setstacksize",
+      "preadv64",
+      "scanf",
+      "pthread_rwlock_rdlock",
+      "mq_receive",
+      "getcwd",
+      "readdir64_r",
+      "pthread_spin_unlock",
+      "__isoc99_vswscanf",
+      "pthread_join",
+      "readlinkat",
+      "__pthread_setcancelstate",
+      "getchar",
+      "pthread_rwlock_timedwrlock",
+      "__freadptr",
+      "__pthread_mutex_lock",
+      "__isoc99_scanf",
+      "__freadable",
+      "pthread_getattr_np",
+      "pthread_attr_init",
+      "pthread_condattr_getpshared",
+      "pthread_mutex_trylock",
+      "pthread_barrierattr_setpshared",
+      "pthread_attr_getdetachstate",
+      "pthread_barrier_init",
+      "pthread_attr_setscope",
+      "__pthread_tsd_main",
+      "pthread_barrier_destroy",
+      "pthread_attr_destroy",
+      "pthread_rwlock_wrlock",
+      "pthread_tryjoin_np",
+      "pthread_mutexattr_setprotocol",
+      "__pthread_mutex_trylock",
+      "pthread_mutexattr_setpshared",
+      "__isoc99_swscanf",
+      "__shgetc",
+      "pthread_setconcurrency",
+      "readdir64",
+      "pthread_mutex_unlock",
+      "pthread_setschedprio",
+      "__pthread_tsd_size",
+      "vscanf",
+      "fgetspent",
+      "fegetenv",
+      "__toread_needs_stdio_exit",
+      "__freadahead",
+      "preadv",
+      "fgetc_unlocked",
+      "__isoc99_fscanf",
+      "eventfd_read",
+      "pthread_testcancel",
+      "pthread_attr_setschedparam",
+      "__isoc99_sscanf",
+      "getpass",
+      "sched_getcpu",
+      "pthread_mutexattr_init",
+      "pthread_mutex_init",
+      "pthread_create",
+      "pthread_getaffinity_np",
+      "pthread_detach",
+      "aio_read",
+      "__pthread_key_delete",
+      "pthread_exit",
+      "recv",
+      "__isoc99_vfscanf",
+      "vswscanf",
+      "pthread_attr_getstacksize",
+      "pthread_attr_setdetachstate",
+      "pthread_attr_getschedpolicy",
+      "__pthread_cond_timedwait",
+      "pthread_spin_destroy",
+      "__freadptrinc",
+      "pthread_setschedparam",
+      "pthread_attr_setstack",
+      "pthread_spin_init",
+      "pthread_rwlock_tryrdlock",
+      "__getopt_msg",
+      "pthread_attr_setguardsize",
+      "pthread_timedjoin_np",
+      "pthread_mutexattr_getrobust",
+      "readv",
+      "_pthread_cleanup_pop",
+      "__pthread_once",
+      "recvfrom",
+      "pthread_mutexattr_getpshared",
+      "getenv",
+      "__pthread_mutex_unlock",
+      "__isoc99_vscanf",
+      "recvmsg",
+      "pthread_condattr_setpshared",
+      "getchar_unlocked",
+      "pread64",
+      "pthread_spin_trylock"
+    ],
+    "arch": "Mips",
+    "score": 502
+  },
+  {
+    "path": "_US_AC10V4.0si_V16.03.10.09_multi_TDE01.bin.extracted/squashfs-root/lib/libcrypto.so.1.0.0",
+    "danger_funcs": [
+      "fgets",
+      "strcpy",
+      "getsockname",
+      "strcat",
+      "BIO_gets",
+      "getservbyname",
+      "getsockopt"
+    ],
+    "input_funcs": [
+      "PEM_read_PKCS8",
+      "PEM_read_bio_ECPKParameters",
+      "PEM_read",
+      "fgets",
+      "PEM_read_bio_X509",
+      "SMIME_read_ASN1",
+      "PEM_read_ECPKParameters",
+      "UI_UTIL_read_pw_string",
+      "BIO_nread",
+      "PEM_read_X509_CERT_PAIR",
+      "UTF8_getc",
+      "PEM_read_bio_DSAPrivateKey",
+      "BIO_ctrl_get_read_request",
+      "PEM_read_bio_X509_REQ",
+      "PEM_read_bio",
+      "PEM_read_bio_RSAPublicKey",
+      "UI_method_set_reader",
+      "PEM_read_bio_X509_AUX",
+      "readdir",
+      "PEM_read_bio_NETSCAPE_CERT_SEQUENCE",
+      "BIO_number_read",
+      "PEM_read_bio_RSA_PUBKEY",
+      "PEM_read_bio_RSAPrivateKey",
+      "DES_enc_read",
+      "PEM_read_X509_REQ",
+      "getenv",
+      "PEM_read_ECPrivateKey",
+      "ERR_remove_thread_state",
+      "PEM_read_bio_DSAparams",
+      "UI_UTIL_read_pw",
+      "recvfrom",
+      "PEM_read_PrivateKey",
+      "PEM_read_X509",
+      "PEM_read_PKCS7",
+      "SMIME_read_PKCS7",
+      "DES_read_2passwords",
+      "PEM_read_bio_CMS",
+      "read",
+      "BN_BLINDING_set_thread_id",
+      "PEM_read_X509_AUX",
+      "_ossl_old_des_read_pw",
+      "BN_BLINDING_get_thread_id",
+      "TXT_DB_read",
+      "PEM_X509_INFO_read",
+      "sscanf",
+      "PEM_read_bio_DHparams",
+      "BIO_nread0",
+      "PEM_read_bio_X509_CERT_PAIR",
+      "PEM_read_bio_PrivateKey",
+      "PEM_read_DSA_PUBKEY",
+      "EVP_read_pw_string_min",
+      "PEM_read_DSAPrivateKey",
+      "PEM_read_CMS",
+      "PEM_read_bio_DSA_PUBKEY",
+      "_ossl_old_des_enc_read",
+      "BN_BLINDING_thread_id",
+      "PEM_read_EC_PUBKEY",
+      "PEM_read_RSAPublicKey",
+      "PEM_read_NETSCAPE_CERT_SEQUENCE",
+      "PEM_read_bio_Parameters",
+      "PEM_read_DHparams",
+      "PEM_read_bio_X509_CRL",
+      "SMIME_read_CMS",
+      "PEM_read_DSAparams",
+      "UI_method_get_reader",
+      "PEM_ASN1_read_bio",
+      "PEM_read_RSAPrivateKey",
+      "PEM_read_RSA_PUBKEY",
+      "_ossl_old_des_read_2passwords",
+      "PEM_read_X509_CRL",
+      "PEM_ASN1_read",
+      "BIO_read",
+      "PEM_read_bio_PKCS8_PRIV_KEY_INFO",
+      "fread",
+      "DES_read_password",
+      "OPENSSL_DIR_read",
+      "PEM_read_PKCS8_PRIV_KEY_INFO",
+      "BIO_ctrl_reset_read_request",
+      "PEM_read_bio_PUBKEY",
+      "PEM_read_bio_PKCS7",
+      "_ossl_old_des_read_password",
+      "CRYPTO_thread_id",
+      "_ossl_old_des_read_pw_string",
+      "PEM_read_PUBKEY",
+      "PEM_bytes_read_bio",
+      "EVP_read_pw_string",
+      "PEM_read_bio_PKCS8",
+      "PEM_read_bio_EC_PUBKEY",
+      "PEM_X509_INFO_read_bio",
+      "PEM_read_bio_ECPrivateKey"
+    ],
+    "arch": "Mips",
+    "score": 187
+  },
+  {
+    "path": "_US_AC10V4.0si_V16.03.10.09_multi_TDE01.bin.extracted/squashfs-root/bin/vsftpd",
+    "danger_funcs": [
+      "vsf_sysutil_getsockname",
+      "ptrace_sandbox_permit_getsockopt",
+      "vsf_sysutil_strcpy",
+      "getsockopt",
+      "sprintf",
+      "getsockname",
+      "ptrace_sandbox_set_getsockopt_validator",
+      "strcpy"
+    ],
+    "input_funcs": [
+      "recv",
+      "vsf_sysutil_read_loop",
+      "getcwd",
+      "vsf_sysutil_read",
+      "vsf_sysutil_lock_file_read",
+      "str_netfd_read",
+      "str_fileread",
+      "str_getline",
+      "readlink",
+      "vsf_sysutil_getcwd",
+      "str_readlink",
+      "ssl_read_into_str",
+      "ptrace_sandbox_permit_readlink",
+      "vsf_sysutil_shutdown_read_failok",
+      "tunable_strict_ssl_read_eof",
+      "priv_sock_recv_buf",
+      "sscanf",
+      "readdir",
+      "str_getcwd",
+      "recvmsg",
+      "vsf_sysutil_getenv",
+      "tunable_anon_world_readable_only",
+      "ptrace_sandbox_permit_recv",
+      "ftp_read_data",
+      "read",
+      "getenv",
+      "priv_sock_recv_fd",
+      "vsf_sysutil_recv_peek",
+      "vsf_sysutil_readlink",
+      "vsf_sysutil_statbuf_is_readable_other",
+      "ptrace_sandbox_permit_read",
+      "ssl_read",
+      "vsf_sysutil_recv_fd",
+      "str_read_loop",
+      "ftp_getline",
+      "ptrace_sandbox_permit_getcwd"
+    ],
+    "arch": "Mips",
+    "score": 80
+  },
+  {
+    "path": "_US_AC10V4.0si_V16.03.10.09_multi_TDE01.bin.extracted/squashfs-root/bin/httpd",
+    "danger_funcs": [
+      "system_init_core_dump",
+      "system_wan_get_link_status",
+      "fgets",
+      "system_gb2312_to_utf8",
+      "strcat",
+      "system_get_uptime",
+      "system_get_code_format",
+      "sprintf",
+      "system",
+      "popen",
+      "system_convert_code_format",
+      "strcpy",
+      "execve"
+    ],
+    "input_funcs": [
+      "getcwd",
+      "cyg_thread_delay",
+      "read",
+      "recvfrom",
+      "recv",
+      "pthread_detach",
+      "fgets",
+      "readCertChain",
+      "pthread_create",
+      "pthread_mutex_lock",
+      "sscanf",
+      "pthread_mutex_unlock",
+      "pthread_exit",
+      "fscanf",
+      "pthread_self",
+      "flash_read",
+      "mp_read_unsigned_bin",
+      "fread",
+      "fgetc",
+      "pthread_kill"
+    ],
+    "arch": "Mips",
+    "score": 53
+  },
+  {
+    "path": "_US_AC10V4.0si_V16.03.10.09_multi_TDE01.bin.extracted/squashfs-root/bin/busybox",
+    "danger_funcs": [
+      "execve",
+      "strcpy",
+      "vsprintf",
+      "execv",
+      "execvp",
+      "getsockname",
+      "fgets_unlocked",
+      "sprintf",
+      "getservbyname",
+      "strcat",
+      "getservbyport",
+      "stpcpy",
+      "popen",
+      "system",
+      "execl",
+      "execlp",
+      "vasprintf"
+    ],
+    "input_funcs": [
+      "recvfrom",
+      "ungetc",
+      "getopt",
+      "fread",
+      "fgets_unlocked",
+      "getopt_long",
+      "read",
+      "getchar_unlocked",
+      "getline",
+      "fscanf",
+      "readlink",
+      "recvmsg",
+      "readdir",
+      "getenv",
+      "sscanf",
+      "getcwd",
+      "getc_unlocked"
+    ],
+    "arch": "Mips",
+    "score": 51
+  },
+  {
+    "path": "_US_AC10V4.0si_V16.03.10.09_multi_TDE01.bin.extracted/squashfs-root/lib/libssl.so.1.0.0",
+    "danger_funcs": [],
+    "input_funcs": [
+      "ssl3_read_n",
+      "PEM_read_bio_PrivateKey",
+      "ssl3_read_bytes",
+      "BIO_read",
+      "ssl3_release_read_buffer",
+      "PEM_read_bio_DHparams",
+      "dtls1_read_failed",
+      "PEM_read_bio_RSAPrivateKey",
+      "ssl3_read",
+      "PEM_ASN1_read",
+      "dtls1_read_bytes",
+      "PEM_read_bio_X509",
+      "PEM_ASN1_read_bio",
+      "PEM_read_bio_SSL_SESSION",
+      "PEM_read_SSL_SESSION",
+      "OPENSSL_DIR_read",
+      "PEM_read_bio_X509_AUX",
+      "ssl23_read",
+      "PEM_read_bio",
+      "ssl23_read_bytes",
+      "SSL_get_read_ahead",
+      "ssl3_setup_read_buffer",
+      "SSL_read",
+      "SSL_set_read_ahead"
+    ],
+    "arch": "Mips",
+    "score": 48
+  },
+  {
+    "path": "_US_AC10V4.0si_V16.03.10.09_multi_TDE01.bin.extracted/squashfs-root/lib/libucapi.so",
+    "danger_funcs": [
+      "strcpy",
+      "sprintf"
+    ],
+    "input_funcs": [
+      "cgi_select_recv",
+      "pthread_mutex_unlock",
+      "pthread_mutex_destroy",
+      "do_cgi_data_recv",
+      "pthread_self",
+      "read",
+      "pthread_cancel",
+      "pthread_attr_destroy",
+      "pthread_mutex_lock",
+      "pthread_join",
+      "_net_recv",
+      "_cgi_recv",
+      "cgi_recv_from_ucloud",
+      "pthread_mutex_init",
+      "pthread_attr_init",
+      "recv",
+      "do_cgi_header_recv",
+      "pthread_attr_setdetachstate",
+      "pthread_create"
+    ],
+    "arch": "Mips",
+    "score": 40
+  },
+  {
+    "path": "_US_AC10V4.0si_V16.03.10.09_multi_TDE01.bin.extracted/squashfs-root/sbin/wpad",
+    "danger_funcs": [
+      "strcpy",
+      "system",
+      "fgets",
+      "getsockopt",
+      "getsockname",
+      "asprintf"
+    ],
+    "input_funcs": [
+      "BIO_read",
+      "recvfrom",
+      "SSL_read",
+      "PEM_read_bio_X509",
+      "ERR_remove_thread_state",
+      "fgets",
+      "nl_recvmsgs",
+      "getopt",
+      "PEM_read_bio_DHparams",
+      "getcwd",
+      "recv",
+      "sscanf",
+      "PEM_read_bio_PrivateKey",
+      "fread",
+      "recvmsg",
+      "readlink",
+      "PEM_read_bio_DSAparams"
+    ],
+    "arch": "Mips",
+    "score": 40
+  },
+  {
+    "path": "_US_AC10V4.0si_V16.03.10.09_multi_TDE01.bin.extracted/squashfs-root/lib/libcommon.so",
+    "danger_funcs": [
+      "system_usleep",
+      "fgets",
+      "monitor_system",
+      "system_sleep",
+      "system",
+      "system_get_code_format",
+      "system_get_sys_cpu_info",
+      "system_init_core_dump",
+      "sprintf",
+      "monitor_system_network_ok",
+      "system_get_reuse_time",
+      "strcpy",
+      "system_check_module_exist",
+      "system_wl_wps_pin_check",
+      "system_get_memInfo",
+      "system_get_curtime",
+      "system_get_uptime",
+      "system_convert_code_format",
+      "system_init_core_dump_with_path"
+    ],
+    "input_funcs": [
+      "flash_read",
+      "fgets",
+      "readdir",
+      "fscanf",
+      "pthread_create",
+      "msgrcv",
+      "ugw_proc_recv_msg",
+      "read",
+      "fread",
+      "sscanf"
+    ],
+    "arch": "Mips",
+    "score": 39
+  },
+  {
+    "path": "_US_AC10V4.0si_V16.03.10.09_multi_TDE01.bin.extracted/squashfs-root/bin/dhcps",
+    "danger_funcs": [
+      "popen",
+      "strcat",
+      "getsockname",
+      "sprintf",
+      "fgets",
+      "execl",
+      "strcpy"
+    ],
+    "input_funcs": [
+      "reread_dhcp",
+      "fscanf",
+      "read_opts",
+      "dhcp_read_ethers",
+      "getopt_long",
+      "read",
+      "recv_sigusr2",
+      "read_write",
+      "readdir",
+      "fgets",
+      "recv",
+      "recvfrom",
+      "ungetc",
+      "getc",
+      "recvmsg"
+    ],
+    "arch": "Mips",
+    "score": 37
+  },
+  {
+    "path": "_US_AC10V4.0si_V16.03.10.09_multi_TDE01.bin.extracted/squashfs-root/bin/pppd",
+    "danger_funcs": [
+      "strcat",
+      "nanchang_getstr1",
+      "nanchang_getstr3",
+      "sprintf",
+      "stpcpy",
+      "fgets",
+      "system_get_uptime",
+      "nanchang_getstr2",
+      "strcpy",
+      "execve",
+      "execl"
+    ],
+    "input_funcs": [
+      "ungetc",
+      "getc",
+      "ppp_recv_config",
+      "tty_recv_config",
+      "lax_recv",
+      "snoop_recv_hook",
+      "fgets",
+      "fread",
+      "mppe_recv_key",
+      "read",
+      "sscanf",
+      "read_packet",
+      "complete_read"
+    ],
+    "arch": "Mips",
+    "score": 37
+  },
+  {
+    "path": "_US_AC10V4.0si_V16.03.10.09_multi_TDE01.bin.extracted/squashfs-root/bin/pptpd",
+    "danger_funcs": [
+      "execvp",
+      "getservbyname",
+      "getsockname",
+      "sprintf",
+      "strcat",
+      "strcpy",
+      "system",
+      "fgets",
+      "execve"
+    ],
+    "input_funcs": [
+      "_getopt_internal",
+      "read_pptp_packet",
+      "read_config_file",
+      "getenv",
+      "create_user_manager_thread",
+      "__getopt_initialized",
+      "sscanf",
+      "recv_pppd_message",
+      "getopt_long",
+      "recv",
+      "fgets",
+      "getopt",
+      "getopt_long_only",
+      "read"
+    ],
+    "arch": "Mips",
+    "score": 37
+  },
+  {
+    "path": "_US_AC10V4.0si_V16.03.10.09_multi_TDE01.bin.extracted/squashfs-root/lib/libnl-3.so.200.16.1",
+    "danger_funcs": [
+      "fgets",
+      "vasprintf",
+      "getsockname"
+    ],
+    "input_funcs": [
+      "nl_cb_overwrite_recvmsgs",
+      "nl_socket_recv_pktinfo",
+      "pthread_rwlock_wrlock",
+      "fgets",
+      "nl_recv",
+      "sscanf",
+      "nl_cache_mngr_data_ready",
+      "nl_recvmsgs",
+      "fscanf",
+      "nl_cb_overwrite_recv",
+      "pthread_rwlock_rdlock",
+      "__nl_read_num_str_file",
+      "getenv",
+      "nl_recvmsgs_report",
+      "nl_recvmsgs_default",
+      "recvmsg",
+      "pthread_rwlock_unlock"
+    ],
+    "arch": "Mips",
+    "score": 37
+  },
+  {
+    "path": "_US_AC10V4.0si_V16.03.10.09_multi_TDE01.bin.extracted/squashfs-root/bin/ip",
+    "danger_funcs": [
+      "execvp",
+      "strcat",
+      "getsockname",
+      "fgets",
+      "sprintf",
+      "strcpy"
+    ],
+    "input_funcs": [
+      "read_dev_mcast",
+      "sscanf",
+      "read",
+      "read_igmp",
+      "read_igmp6",
+      "recv",
+      "getenv",
+      "fgets",
+      "getline",
+      "recvmsg",
+      "fread",
+      "readdir",
+      "fscanf",
+      "getcmdline"
+    ],
+    "arch": "Mips",
+    "score": 34
+  },
+  {
+    "path": "_US_AC10V4.0si_V16.03.10.09_multi_TDE01.bin.extracted/squashfs-root/lib/libcloud.so",
+    "danger_funcs": [
+      "system",
+      "getsockopt",
+      "sprintf",
+      "strcpy"
+    ],
+    "input_funcs": [
+      "svr_ready_event_handle",
+      "inner_head_recv",
+      "recv",
+      "_net_recv",
+      "do_inner_read",
+      "outer_head_recv",
+      "outer_recv",
+      "pthread_create",
+      "inner_recv",
+      "pthread_self",
+      "pthread_exit",
+      "do_event_svr_not_ready",
+      "do_outer_read",
+      "server_is_ready",
+      "pthread_detach"
+    ],
+    "arch": "Mips",
+    "score": 34
+  },
+  {
+    "path": "_US_AC10V4.0si_V16.03.10.09_multi_TDE01.bin.extracted/squashfs-root/bin/auto_discover",
+    "danger_funcs": [
+      "system_get_code_format",
+      "system_init_core_dump",
+      "fgets",
+      "sprintf",
+      "strcpy",
+      "system_connect_timeout",
+      "system_gb2312_to_utf8"
+    ],
+    "input_funcs": [
+      "recvmsg",
+      "pthread_create",
+      "read",
+      "pthread_mutex_unlock",
+      "read_dhcps_file",
+      "sscanf",
+      "pthread_mutex_lock",
+      "read_uptime",
+      "recvfrom",
+      "fgets",
+      "client_name_read_mib",
+      "recv"
+    ],
+    "arch": "Mips",
+    "score": 31
+  },
+  {
+    "path": "_US_AC10V4.0si_V16.03.10.09_multi_TDE01.bin.extracted/squashfs-root/lib/modules/sf_eswitch.ko",
+    "danger_funcs": [
+      "sprintf"
+    ],
+    "input_funcs": [
+      "sf_mdio_read",
+      "rtl_8367r_vlan_read",
+      "rtl8367c_smi_read",
+      "smi_read",
+      "sf_eswitch_debug_read",
+      "mdio_read_ext",
+      "dal_rtl8367c_i2c_data_read",
+      "sf_eswitch_read_phy_reg",
+      "sscanf",
+      "simple_read_from_buffer",
+      "rtl_83xx_share_meter_read_proc",
+      "l2sw_smi_read",
+      "l2sw_switch_ahb_read",
+      "rtl_83xx_storm_ctrl_read_proc",
+      "rtk_i2c_data_read"
+    ],
+    "arch": "Mips",
+    "score": 31
+  },
+  {
+    "path": "_US_AC10V4.0si_V16.03.10.09_multi_TDE01.bin.extracted/squashfs-root/bin/netctrl",
+    "danger_funcs": [
+      "system",
+      "strcat",
+      "system_td_gethostbyname",
+      "system_wan_ip_get",
+      "popen",
+      "system_wan_get_link_status",
+      "system_get_uptime",
+      "strcpy",
+      "fgets",
+      "sprintf",
+      "system_init_core_dump",
+      "system_connect_timeout"
+    ],
+    "input_funcs": [
+      "read",
+      "sscanf",
+      "cm_io_read",
+      "recv",
+      "fgets",
+      "fscanf",
+      "ugw_proc_recv_msg",
+      "readline",
+      "recvmsg"
+    ],
+    "arch": "Mips",
+    "score": 30
+  },
+  {
+    "path": "_US_AC10V4.0si_V16.03.10.09_multi_TDE01.bin.extracted/squashfs-root/lib/libcommonprod.so",
+    "danger_funcs": [
+      "strcpy",
+      "system_connect_timeout",
+      "system_wan_ip_get",
+      "system_get_uptime",
+      "system_wan_get_link_status",
+      "system",
+      "getsockopt",
+      "fgets",
+      "popen",
+      "sprintf",
+      "strcat"
+    ],
+    "input_funcs": [
+      "recvfrom",
+      "sscanf",
+      "fscanf",
+      "read",
+      "pthread_create",
+      "readdir",
+      "fread",
+      "fgets"
+    ],
+    "arch": "Mips",
+    "score": 27
+  },
+  {
+    "path": "_US_AC10V4.0si_V16.03.10.09_multi_TDE01.bin.extracted/squashfs-root/lib/modules/sf16a18_fmac.ko",
+    "danger_funcs": [
+      "kasprintf",
+      "system_wq",
+      "sprintf"
+    ],
+    "input_funcs": [
+      "readline_digtable_configfile",
+      "siwifi_send_dbg_mem_read_req",
+      "sscanf",
+      "cfg80211_ready_on_channel",
+      "kernel_read",
+      "of_property_read_variable_u32_array",
+      "mtd_read",
+      "simple_read_from_buffer",
+      "siwifi_send_read_cde_info",
+      "request_threaded_irq",
+      "seq_read",
+      "atomic64_read"
+    ],
+    "arch": "Mips",
+    "score": 27
+  },
+  {
+    "path": "_US_AC10V4.0si_V16.03.10.09_multi_TDE01.bin.extracted/squashfs-root/usr/sbin/pppoe-server",
+    "danger_funcs": [
+      "system_get_uptime",
+      "fgets",
+      "sprintf",
+      "strcpy"
+    ],
+    "input_funcs": [
+      "read_message",
+      "fread",
+      "sscanf",
+      "recv",
+      "pthread_mutex_lock",
+      "pthread_mutex_unlock",
+      "fgets",
+      "read",
+      "fscanf",
+      "getopt",
+      "msgrcv"
+    ],
+    "arch": "Mips",
+    "score": 26
+  },
+  {
+    "path": "_US_AC10V4.0si_V16.03.10.09_multi_TDE01.bin.extracted/squashfs-root/bin/dnrd",
+    "danger_funcs": [
+      "fgets",
+      "strcpy",
+      "sprintf_cname",
+      "getservbyname"
+    ],
+    "input_funcs": [
+      "read_configuration",
+      "getopt",
+      "fgetc",
+      "read_record",
+      "fgets",
+      "recvfrom",
+      "recv_addr",
+      "read_config_file",
+      "sscanf",
+      "readdir"
+    ],
+    "arch": "Mips",
+    "score": 24
+  },
+  {
+    "path": "_US_AC10V4.0si_V16.03.10.09_multi_TDE01.bin.extracted/squashfs-root/bin/multiWAN",
+    "danger_funcs": [
+      "strcat",
+      "strcpy",
+      "system_wan_ip_get",
+      "sprintf",
+      "popen",
+      "system_init_core_dump",
+      "fgets",
+      "system"
+    ],
+    "input_funcs": [
+      "read",
+      "recv",
+      "sscanf",
+      "fscanf",
+      "recvmsg",
+      "read_interface",
+      "cm_io_read",
+      "fgets"
+    ],
+    "arch": "Mips",
+    "score": 24
+  },
+  {
+    "path": "_US_AC10V4.0si_V16.03.10.09_multi_TDE01.bin.extracted/squashfs-root/sbin/udevd",
+    "danger_funcs": [
+      "strcpy",
+      "sprintf",
+      "fgets",
+      "strcat",
+      "execv",
+      "system"
+    ],
+    "input_funcs": [
+      "read",
+      "getopt_long",
+      "recv",
+      "fgets",
+      "readdir",
+      "sscanf",
+      "readlink",
+      "getenv",
+      "recvmsg"
+    ],
+    "arch": "Mips",
+    "score": 24
+  },
+  {
+    "path": "_US_AC10V4.0si_V16.03.10.09_multi_TDE01.bin.extracted/squashfs-root/usr/sbin/pppdv2",
+    "danger_funcs": [
+      "fgets",
+      "sprintf",
+      "strcpy",
+      "system_get_uptime"
+    ],
+    "input_funcs": [
+      "msgrcv",
+      "script_getenv",
+      "sscanf",
+      "read_packet",
+      "getopt",
+      "fgets",
+      "recv_ppp_input",
+      "read_message",
+      "read",
+      "ppp_recv_config"
+    ],
+    "arch": "Mips",
+    "score": 24
+  },
+  {
+    "path": "_US_AC10V4.0si_V16.03.10.09_multi_TDE01.bin.extracted/squashfs-root/bin/cfmd",
+    "danger_funcs": [
+      "sprintf",
+      "system",
+      "system_init_core_dump",
+      "fgets",
+      "monitor_system_network_ok"
+    ],
+    "input_funcs": [
+      "pthread_create_one",
+      "pthread_create",
+      "pthread_mutex_lock",
+      "cm_io_read",
+      "fgets",
+      "read",
+      "pthread_mutex_unlock",
+      "pthread_detach",
+      "flash_read"
+    ],
+    "arch": "Mips",
+    "score": 23
+  },
+  {
+    "path": "_US_AC10V4.0si_V16.03.10.09_multi_TDE01.bin.extracted/squashfs-root/bin/pppdForPppServer",
+    "danger_funcs": [
+      "strcpy",
+      "sprintf",
+      "fgets"
+    ],
+    "input_funcs": [
+      "mppe_recv_key",
+      "sscanf",
+      "ppp_recv_config",
+      "recv_pppox_sock",
+      "read_packet",
+      "script_getenv",
+      "fgets",
+      "recv",
+      "read",
+      "getopt"
+    ],
+    "arch": "Mips",
+    "score": 23
+  },
+  {
+    "path": "_US_AC10V4.0si_V16.03.10.09_multi_TDE01.bin.extracted/squashfs-root/bin/radvd",
+    "danger_funcs": [
+      "strcpy",
+      "vasprintf",
+      "sprintf"
+    ],
+    "input_funcs": [
+      "getopt_long",
+      "recv_rs_ra",
+      "readin_config",
+      "readn",
+      "fread",
+      "recvmsg",
+      "getc",
+      "fscanf",
+      "read"
+    ],
+    "arch": "Mips",
+    "score": 21
+  },
+  {
+    "path": "_US_AC10V4.0si_V16.03.10.09_multi_TDE01.bin.extracted/squashfs-root/bin/miniupnpd",
+    "danger_funcs": [
+      "fgets",
+      "getsockopt",
+      "vsprintf",
+      "sprintf",
+      "strcpy",
+      "getsockname"
+    ],
+    "input_funcs": [
+      "fgets",
+      "sscanf",
+      "readoptionsfile",
+      "recvfrom",
+      "read_permission_line",
+      "read",
+      "recv"
+    ],
+    "arch": "Mips",
+    "score": 20
+  },
+  {
+    "path": "_US_AC10V4.0si_V16.03.10.09_multi_TDE01.bin.extracted/squashfs-root/lib/modules/sfax8_factory_read.ko",
+    "danger_funcs": [
+      "sprintf"
+    ],
+    "input_funcs": [
+      "f_read_ctx",
+      "sfax8_factory_read_remove",
+      "of_property_read_variable_u32_array",
+      "sscanf",
+      "simple_read_from_buffer",
+      "mtd_read",
+      "sf_factory_read_sysfs_register",
+      "sf_factory_read_sysfs_unregister",
+      "sfax8_factory_read_probe"
+    ],
+    "arch": "Mips",
+    "score": 19
+  },
+  {
+    "path": "_US_AC10V4.0si_V16.03.10.09_multi_TDE01.bin.extracted/squashfs-root/bin/business_proc",
+    "danger_funcs": [
+      "strcat",
+      "system_get_uptime",
+      "sprintf",
+      "strcpy",
+      "popen",
+      "system_wan_get_link_status"
+    ],
+    "input_funcs": [
+      "getopt_long",
+      "fscanf",
+      "read",
+      "pthread_mutex_unlock",
+      "pthread_mutex_lock",
+      "sscanf"
+    ],
+    "arch": "Mips",
+    "score": 18
+  },
+  {
+    "path": "_US_AC10V4.0si_V16.03.10.09_multi_TDE01.bin.extracted/squashfs-root/bin/dhcp6c",
+    "danger_funcs": [
+      "execve",
+      "fgets",
+      "sprintf",
+      "strcpy"
+    ],
+    "input_funcs": [
+      "getopt",
+      "fread",
+      "read",
+      "fgets",
+      "getc",
+      "sscanf",
+      "recvmsg"
+    ],
+    "arch": "Mips",
+    "score": 18
+  },
+  {
+    "path": "_US_AC10V4.0si_V16.03.10.09_multi_TDE01.bin.extracted/squashfs-root/bin/internet_detec",
+    "danger_funcs": [
+      "system_sleep",
+      "system_wan_ip_get",
+      "sprintf",
+      "fgets"
+    ],
+    "input_funcs": [
+      "pthread_cancel",
+      "pthread_attr_init",
+      "pthread_attr_setscope",
+      "pthread_self",
+      "sscanf",
+      "pthread_create",
+      "fgets"
+    ],
+    "arch": "Mips",
+    "score": 18
+  },
+  {
+    "path": "_US_AC10V4.0si_V16.03.10.09_multi_TDE01.bin.extracted/squashfs-root/bin/ip6tables",
+    "danger_funcs": [
+      "getservbyport",
+      "execv",
+      "strcat",
+      "getservbyname",
+      "sprintf",
+      "fgets",
+      "strcpy",
+      "getsockopt"
+    ],
+    "input_funcs": [
+      "getopt_long",
+      "read",
+      "getenv",
+      "sscanf",
+      "fgets"
+    ],
+    "arch": "Mips",
+    "score": 18
+  },
+  {
+    "path": "_US_AC10V4.0si_V16.03.10.09_multi_TDE01.bin.extracted/squashfs-root/bin/iptables",
+    "danger_funcs": [
+      "getsockopt",
+      "getservbyport",
+      "strcpy",
+      "fgets",
+      "getservbyname",
+      "sprintf",
+      "execv",
+      "strcat"
+    ],
+    "input_funcs": [
+      "sscanf",
+      "read",
+      "fgets",
+      "getopt_long",
+      "getenv"
+    ],
+    "arch": "Mips",
+    "score": 18
+  },
+  {
+    "path": "_US_AC10V4.0si_V16.03.10.09_multi_TDE01.bin.extracted/squashfs-root/bin/xl2tpd-client",
+    "danger_funcs": [
+      "getsockname",
+      "fgets",
+      "strcpy",
+      "execv",
+      "strcat",
+      "sprintf"
+    ],
+    "input_funcs": [
+      "fgets",
+      "fscanf",
+      "network_thread",
+      "read",
+      "recvmsg",
+      "read_packet"
+    ],
+    "arch": "Mips",
+    "score": 18
+  },
+  {
+    "path": "_US_AC10V4.0si_V16.03.10.09_multi_TDE01.bin.extracted/squashfs-root/lib/modules/sf16a18_rf.ko",
+    "danger_funcs": [
+      "sprintf",
+      "system_wq"
+    ],
+    "input_funcs": [
+      "mtd_read",
+      "ml_apb_read",
+      "of_property_read_variable_u32_array",
+      "ml_apb_rsbus_read",
+      "simple_read_from_buffer",
+      "sscanf",
+      "kernel_read",
+      "request_threaded_irq"
+    ],
+    "arch": "Mips",
+    "score": 18
+  },
+  {
+    "path": "_US_AC10V4.0si_V16.03.10.09_multi_TDE01.bin.extracted/squashfs-root/bin/phddns",
+    "danger_funcs": [
+      "strcpy",
+      "system",
+      "sprintf",
+      "fgets",
+      "strcat"
+    ],
+    "input_funcs": [
+      "getchar",
+      "fgets",
+      "getopt",
+      "recv",
+      "recvfrom",
+      "getch_c"
+    ],
+    "arch": "Mips",
+    "score": 17
+  },
+  {
+    "path": "_US_AC10V4.0si_V16.03.10.09_multi_TDE01.bin.extracted/squashfs-root/bin/inadyn",
+    "danger_funcs": [
+      "stpcpy",
+      "dns_system_table",
+      "system",
+      "get_dyndns_system_table",
+      "strcpy",
+      "sprintf"
+    ],
+    "input_funcs": [
+      "recv",
+      "fscanf",
+      "ip_recv",
+      "sscanf",
+      "tcp_recv"
+    ],
+    "arch": "Mips",
+    "score": 16
+  },
+  {
+    "path": "_US_AC10V4.0si_V16.03.10.09_multi_TDE01.bin.extracted/squashfs-root/bin/ate",
+    "danger_funcs": [
+      "strcat",
+      "sprintf",
+      "fgets",
+      "popen",
+      "strcpy"
+    ],
+    "input_funcs": [
+      "sscanf",
+      "readUsb",
+      "fgets",
+      "recvfrom",
+      "read"
+    ],
+    "arch": "Mips",
+    "score": 15
+  },
+  {
+    "path": "_US_AC10V4.0si_V16.03.10.09_multi_TDE01.bin.extracted/squashfs-root/bin/ate_cmd",
+    "danger_funcs": [
+      "system",
+      "strcpy",
+      "sprintf"
+    ],
+    "input_funcs": [
+      "read_gain_table_from_mtd",
+      "fscanf",
+      "getc",
+      "read_iw_bulk_reg",
+      "read_iw_reg",
+      "getopt_tmp"
+    ],
+    "arch": "Mips",
+    "score": 15
+  },
+  {
+    "path": "_US_AC10V4.0si_V16.03.10.09_multi_TDE01.bin.extracted/squashfs-root/bin/dhcp6s",
+    "danger_funcs": [
+      "fgets"
+    ],
+    "input_funcs": [
+      "getopt",
+      "fread",
+      "recvmsg",
+      "read",
+      "fgets",
+      "sscanf",
+      "getc"
+    ],
+    "arch": "Mips",
+    "score": 15
+  },
+  {
+    "path": "_US_AC10V4.0si_V16.03.10.09_multi_TDE01.bin.extracted/squashfs-root/bin/steerd",
+    "danger_funcs": [
+      "system",
+      "sprintf",
+      "popen"
+    ],
+    "input_funcs": [
+      "recv",
+      "getopt",
+      "fread",
+      "read",
+      "readdir",
+      "sscanf"
+    ],
+    "arch": "Mips",
+    "score": 15
+  },
+  {
+    "path": "_US_AC10V4.0si_V16.03.10.09_multi_TDE01.bin.extracted/squashfs-root/bin/wserver",
+    "danger_funcs": [
+      "system_init_core_dump",
+      "strcpy",
+      "strcat",
+      "execvp",
+      "system_convert_code_format",
+      "system",
+      "sprintf"
+    ],
+    "input_funcs": [
+      "fread",
+      "readdir",
+      "read",
+      "cm_io_read"
+    ],
+    "arch": "Mips",
+    "score": 15
+  },
+  {
+    "path": "_US_AC10V4.0si_V16.03.10.09_multi_TDE01.bin.extracted/squashfs-root/lib/libgcc_s.so.1",
+    "danger_funcs": [
+      "pthread_getspecific"
+    ],
+    "input_funcs": [
+      "pthread_mutex_lock",
+      "pthread_cancel",
+      "pthread_once",
+      "pthread_getspecific",
+      "pthread_key_create",
+      "pthread_setspecific",
+      "pthread_mutex_unlock"
+    ],
+    "arch": "Mips",
+    "score": 15
+  },
+  {
+    "path": "_US_AC10V4.0si_V16.03.10.09_multi_TDE01.bin.extracted/squashfs-root/lib/modules/sfhnat.ko",
+    "danger_funcs": [
+      "sprintf"
+    ],
+    "input_funcs": [
+      "hnat_readl",
+      "sf_hnat_debug_read",
+      "sf_hnat_statistic_count_read",
+      "sf_hnat_read_count_registers",
+      "sf_hnat_speed_read",
+      "print_read_data",
+      "simple_read_from_buffer"
+    ],
+    "arch": "Mips",
+    "score": 15
+  },
+  {
+    "path": "_US_AC10V4.0si_V16.03.10.09_multi_TDE01.bin.extracted/squashfs-root/lib/modules/sgmac.ko",
+    "danger_funcs": [
+      "system_wq",
+      "sprintf",
+      "system_power_efficient_wq"
+    ],
+    "input_funcs": [
+      "kthread_create_on_node",
+      "sfax8_gmac_debug_read",
+      "of_property_read_variable_u32_array",
+      "simple_read_from_buffer",
+      "request_threaded_irq",
+      "ytphy_read_ext"
+    ],
+    "arch": "Mips",
+    "score": 15
+  },
+  {
+    "path": "_US_AC10V4.0si_V16.03.10.09_multi_TDE01.bin.extracted/squashfs-root/bin/dhcpcd",
+    "danger_funcs": [
+      "sprintf",
+      "strcpy"
+    ],
+    "input_funcs": [
+      "read",
+      "readDhcpCache",
+      "recvfrom",
+      "fscanf",
+      "checkIfAlreadyRunning",
+      "sscanf"
+    ],
+    "arch": "Mips",
+    "score": 14
+  },
+  {
+    "path": "_US_AC10V4.0si_V16.03.10.09_multi_TDE01.bin.extracted/squashfs-root/lib/libwshared.so",
+    "danger_funcs": [
+      "strcpy",
+      "system_get_code_format",
+      "system_convert_code_format",
+      "sprintf",
+      "fgets"
+    ],
+    "input_funcs": [
+      "nl_recvmsgs",
+      "recv",
+      "sscanf",
+      "fgets"
+    ],
+    "arch": "Mips",
+    "score": 13
+  },
+  {
+    "path": "_US_AC10V4.0si_V16.03.10.09_multi_TDE01.bin.extracted/squashfs-root/lib/modules/sfax8_netlink.ko",
+    "danger_funcs": [
+      "sprintf"
+    ],
+    "input_funcs": [
+      "sfax8_genl_debug_read",
+      "kthread_should_stop",
+      "kthread_stop",
+      "kthread_create_on_node",
+      "sf_genl_recv",
+      "simple_read_from_buffer"
+    ],
+    "arch": "Mips",
+    "score": 13
+  },
+  {
+    "path": "_US_AC10V4.0si_V16.03.10.09_multi_TDE01.bin.extracted/squashfs-root/bin/ate_server",
+    "danger_funcs": [
+      "system",
+      "sprintf"
+    ],
+    "input_funcs": [
+      "read_iw_bulk_reg",
+      "read_iw_reg",
+      "read_gain_table_from_mtd",
+      "sscanf",
+      "recv"
+    ],
+    "arch": "Mips",
+    "score": 12
+  },
+  {
+    "path": "_US_AC10V4.0si_V16.03.10.09_multi_TDE01.bin.extracted/squashfs-root/bin/chat",
+    "danger_funcs": [
+      "fgets",
+      "strcat",
+      "sprintf",
+      "strcpy"
+    ],
+    "input_funcs": [
+      "fread",
+      "getenv",
+      "fgets",
+      "read"
+    ],
+    "arch": "Mips",
+    "score": 12
+  },
+  {
+    "path": "_US_AC10V4.0si_V16.03.10.09_multi_TDE01.bin.extracted/squashfs-root/bin/dhttpd",
+    "danger_funcs": [
+      "strcpy",
+      "sprintf",
+      "getsockname",
+      "execve"
+    ],
+    "input_funcs": [
+      "read",
+      "sscanf",
+      "getcwd",
+      "recv"
+    ],
+    "arch": "Mips",
+    "score": 12
+  },
+  {
+    "path": "_US_AC10V4.0si_V16.03.10.09_multi_TDE01.bin.extracted/squashfs-root/bin/igmpproxy",
+    "danger_funcs": [
+      "strcpy",
+      "sprintf",
+      "system_init_core_dump",
+      "system"
+    ],
+    "input_funcs": [
+      "recvfrom",
+      "fread",
+      "recv_buf",
+      "readSize"
+    ],
+    "arch": "Mips",
+    "score": 12
+  },
+  {
+    "path": "_US_AC10V4.0si_V16.03.10.09_multi_TDE01.bin.extracted/squashfs-root/lib/libcm.so",
+    "danger_funcs": [
+      "strcpy",
+      "sprintf",
+      "execvp",
+      "getsockopt"
+    ],
+    "input_funcs": [
+      "cm_read",
+      "getenv",
+      "cm_io_read",
+      "read"
+    ],
+    "arch": "Mips",
+    "score": 12
+  },
+  {
+    "path": "_US_AC10V4.0si_V16.03.10.09_multi_TDE01.bin.extracted/squashfs-root/sbin/wpa_cli",
+    "danger_funcs": [
+      "execv",
+      "strcpy"
+    ],
+    "input_funcs": [
+      "read",
+      "readdir",
+      "getenv",
+      "getopt",
+      "recv"
+    ],
+    "arch": "Mips",
+    "score": 12
+  },
+  {
+    "path": "_US_AC10V4.0si_V16.03.10.09_multi_TDE01.bin.extracted/squashfs-root/bin/sntp",
+    "danger_funcs": [
+      "sprintf",
+      "system",
+      "fgets"
+    ],
+    "input_funcs": [
+      "getopt",
+      "recvfrom",
+      "sscanf",
+      "fgets"
+    ],
+    "arch": "Mips",
+    "score": 11
+  },
+  {
+    "path": "_US_AC10V4.0si_V16.03.10.09_multi_TDE01.bin.extracted/squashfs-root/lib/libkm.so",
+    "danger_funcs": [
+      "strcpy",
+      "sprintf",
+      "fgets"
+    ],
+    "input_funcs": [
+      "fscanf",
+      "sscanf",
+      "recvmsg",
+      "fgets"
+    ],
+    "arch": "Mips",
+    "score": 11
+  },
+  {
+    "path": "_US_AC10V4.0si_V16.03.10.09_multi_TDE01.bin.extracted/squashfs-root/lib/libz.so",
+    "danger_funcs": [
+      "strcpy",
+      "strcat",
+      "vsprintf",
+      "gzgets",
+      "sprintf"
+    ],
+    "input_funcs": [
+      "fread",
+      "gzgetc",
+      "gzread"
+    ],
+    "arch": "Mips",
+    "score": 11
+  },
+  {
+    "path": "_US_AC10V4.0si_V16.03.10.09_multi_TDE01.bin.extracted/squashfs-root/sbin/hostapd_cli",
+    "danger_funcs": [
+      "execv"
+    ],
+    "input_funcs": [
+      "read",
+      "readdir",
+      "recv",
+      "getopt",
+      "getenv"
+    ],
+    "arch": "Mips",
+    "score": 11
+  },
+  {
+    "path": "_US_AC10V4.0si_V16.03.10.09_multi_TDE01.bin.extracted/squashfs-root/bin/temp",
+    "danger_funcs": [
+      "sprintf",
+      "fgets"
+    ],
+    "input_funcs": [
+      "pthread_join",
+      "fgets",
+      "readdir",
+      "pthread_create"
+    ],
+    "arch": "Mips",
+    "score": 10
+  },
+  {
+    "path": "_US_AC10V4.0si_V16.03.10.09_multi_TDE01.bin.extracted/squashfs-root/lib/libiofdrv.so",
+    "danger_funcs": [
+      "fgets",
+      "system"
+    ],
+    "input_funcs": [
+      "readdir",
+      "fgets",
+      "sscanf",
+      "fread"
+    ],
+    "arch": "Mips",
+    "score": 10
+  },
+  {
+    "path": "_US_AC10V4.0si_V16.03.10.09_multi_TDE01.bin.extracted/squashfs-root/lib/modules/4.14.90/kernel/drivers/net/ppp/pppoe.ko",
+    "danger_funcs": [
+      "sock_no_getsockopt",
+      "system_wq"
+    ],
+    "input_funcs": [
+      "seq_read",
+      "_raw_read_unlock_bh",
+      "_raw_read_lock_bh",
+      "skb_recv_datagram"
+    ],
+    "arch": "Mips",
+    "score": 10
+  },
+  {
+    "path": "_US_AC10V4.0si_V16.03.10.09_multi_TDE01.bin.extracted/squashfs-root/lib/modules/fastnat.ko",
+    "danger_funcs": [],
+    "input_funcs": [
+      "_raw_read_lock_bh",
+      "_ctf_proc_read_statistics_forward_ipv6_packet_num",
+      "_raw_read_unlock_bh",
+      "seq_read",
+      "sscanf"
+    ],
+    "arch": "Mips",
+    "score": 10
+  },
+  {
+    "path": "_US_AC10V4.0si_V16.03.10.09_multi_TDE01.bin.extracted/squashfs-root/lib/modules/url_filter.ko",
+    "danger_funcs": [
+      "strcat",
+      "sprintf"
+    ],
+    "input_funcs": [
+      "_raw_read_lock_bh",
+      "_raw_read_unlock_bh",
+      "seq_read",
+      "simple_read_from_buffer"
+    ],
+    "arch": "Mips",
+    "score": 10
+  },
+  {
+    "path": "_US_AC10V4.0si_V16.03.10.09_multi_TDE01.bin.extracted/squashfs-root/bin/wcli",
+    "danger_funcs": [
+      "execvp",
+      "system",
+      "sprintf",
+      "strcat",
+      "strcpy"
+    ],
+    "input_funcs": [
+      "read",
+      "readdir"
+    ],
+    "arch": "Mips",
+    "score": 9
+  },
+  {
+    "path": "_US_AC10V4.0si_V16.03.10.09_multi_TDE01.bin.extracted/squashfs-root/lib/modules/cfg80211.ko",
+    "danger_funcs": [
+      "system_power_efficient_wq",
+      "system_wq",
+      "sprintf"
+    ],
+    "input_funcs": [
+      "sscanf",
+      "wiphy_read_of_freq_limits",
+      "cfg80211_ready_on_channel"
+    ],
+    "arch": "Mips",
+    "score": 9
+  },
+  {
+    "path": "_US_AC10V4.0si_V16.03.10.09_multi_TDE01.bin.extracted/squashfs-root/lib/modules/kmbase.ko",
+    "danger_funcs": [
+      "sprintf"
+    ],
+    "input_funcs": [
+      "simple_read_from_buffer",
+      "_raw_read_unlock_bh",
+      "seq_read",
+      "_raw_read_lock_bh"
+    ],
+    "arch": "Mips",
+    "score": 9
+  },
+  {
+    "path": "_US_AC10V4.0si_V16.03.10.09_multi_TDE01.bin.extracted/squashfs-root/lib/pptp.so",
+    "danger_funcs": [
+      "execle",
+      "sprintf",
+      "getsockname"
+    ],
+    "input_funcs": [
+      "sigpipe_read",
+      "read",
+      "pptp_read_some"
+    ],
+    "arch": "Mips",
+    "score": 9
+  },
+  {
+    "path": "_US_AC10V4.0si_V16.03.10.09_multi_TDE01.bin.extracted/squashfs-root/lib/modules/bm.ko",
+    "danger_funcs": [],
+    "input_funcs": [
+      "_raw_read_unlock_bh",
+      "simple_read_from_buffer",
+      "sscanf",
+      "_raw_read_lock_bh"
+    ],
+    "arch": "Mips",
+    "score": 8
+  },
+  {
+    "path": "_US_AC10V4.0si_V16.03.10.09_multi_TDE01.bin.extracted/squashfs-root/lib/modules/mac_filter.ko",
+    "danger_funcs": [],
+    "input_funcs": [
+      "_raw_read_unlock_bh",
+      "seq_read",
+      "simple_read_from_buffer",
+      "_raw_read_lock_bh"
+    ],
+    "arch": "Mips",
+    "score": 8
+  },
+  {
+    "path": "_US_AC10V4.0si_V16.03.10.09_multi_TDE01.bin.extracted/squashfs-root/lib/modules/privilege_ip.ko",
+    "danger_funcs": [],
+    "input_funcs": [
+      "seq_read",
+      "simple_read_from_buffer",
+      "_raw_read_lock_bh",
+      "_raw_read_unlock_bh"
+    ],
+    "arch": "Mips",
+    "score": 8
+  },
+  {
+    "path": "_US_AC10V4.0si_V16.03.10.09_multi_TDE01.bin.extracted/squashfs-root/lib/rp-pppoe.so",
+    "danger_funcs": [
+      "sprintf",
+      "strcpy"
+    ],
+    "input_funcs": [
+      "recv",
+      "sscanf",
+      "recv_message"
+    ],
+    "arch": "Mips",
+    "score": 8
+  },
+  {
+    "path": "_US_AC10V4.0si_V16.03.10.09_multi_TDE01.bin.extracted/squashfs-root/bin/88ip",
+    "danger_funcs": [
+      "strcat",
+      "sprintf",
+      "strcpy"
+    ],
+    "input_funcs": [
+      "recvfrom",
+      "recv"
+    ],
+    "arch": "Mips",
+    "score": 7
+  },
+  {
+    "path": "_US_AC10V4.0si_V16.03.10.09_multi_TDE01.bin.extracted/squashfs-root/bin/logserver",
+    "danger_funcs": [
+      "system_init_core_dump"
+    ],
+    "input_funcs": [
+      "cm_io_read",
+      "sscanf",
+      "fgetc"
+    ],
+    "arch": "Mips",
+    "score": 7
+  },
+  {
+    "path": "_US_AC10V4.0si_V16.03.10.09_multi_TDE01.bin.extracted/squashfs-root/lib/modules/nos.ko",
+    "danger_funcs": [
+      "sprintf"
+    ],
+    "input_funcs": [
+      "_raw_read_unlock_bh",
+      "sscanf",
+      "_raw_read_lock_bh"
+    ],
+    "arch": "Mips",
+    "score": 7
+  },
+  {
+    "path": "_US_AC10V4.0si_V16.03.10.09_multi_TDE01.bin.extracted/squashfs-root/sbin/iw",
+    "danger_funcs": [
+      "sprintf"
+    ],
+    "input_funcs": [
+      "sscanf",
+      "read",
+      "nl_recvmsgs"
+    ],
+    "arch": "Mips",
+    "score": 7
+  },
+  {
+    "path": "_US_AC10V4.0si_V16.03.10.09_multi_TDE01.bin.extracted/squashfs-root/sbin/snmpd",
+    "danger_funcs": [
+      "sprintf"
+    ],
+    "input_funcs": [
+      "read_config_print_usage",
+      "snmp_read2",
+      "getopt"
+    ],
+    "arch": "Mips",
+    "score": 7
+  },
+  {
+    "path": "_US_AC10V4.0si_V16.03.10.09_multi_TDE01.bin.extracted/squashfs-root/bin/km_cmd",
+    "danger_funcs": [
+      "strcpy",
+      "sprintf"
+    ],
+    "input_funcs": [
+      "sscanf",
+      "fread"
+    ],
+    "arch": "Mips",
+    "score": 6
+  },
+  {
+    "path": "_US_AC10V4.0si_V16.03.10.09_multi_TDE01.bin.extracted/squashfs-root/bin/pptp_callmgr",
+    "danger_funcs": [],
+    "input_funcs": [
+      "pptp_read_some",
+      "read",
+      "sigpipe_read"
+    ],
+    "arch": "Mips",
+    "score": 6
+  },
+  {
+    "path": "_US_AC10V4.0si_V16.03.10.09_multi_TDE01.bin.extracted/squashfs-root/bin/taskset",
+    "danger_funcs": [
+      "sprintf",
+      "execvp"
+    ],
+    "input_funcs": [
+      "getopt_long",
+      "sscanf"
+    ],
+    "arch": "Mips",
+    "score": 6
+  },
+  {
+    "path": "_US_AC10V4.0si_V16.03.10.09_multi_TDE01.bin.extracted/squashfs-root/lib/libvpnmsg.so",
+    "danger_funcs": [],
+    "input_funcs": [
+      "recvmsg",
+      "read_socket",
+      "recv_pppox_sock"
+    ],
+    "arch": "Mips",
+    "score": 6
+  },
+  {
+    "path": "_US_AC10V4.0si_V16.03.10.09_multi_TDE01.bin.extracted/squashfs-root/lib/modules/dnsredirect.ko",
+    "danger_funcs": [
+      "sprintf"
+    ],
+    "input_funcs": [
+      "_raw_read_unlock_bh",
+      "_raw_read_lock_bh"
+    ],
+    "arch": "Mips",
+    "score": 5
+  },
+  {
+    "path": "_US_AC10V4.0si_V16.03.10.09_multi_TDE01.bin.extracted/squashfs-root/lib/pppol2tp.so",
+    "danger_funcs": [
+      "getsockname",
+      "getsockopt",
+      "sprintf"
+    ],
+    "input_funcs": [
+      "snoop_recv_hook"
+    ],
+    "arch": "Mips",
+    "score": 5
+  },
+  {
+    "path": "_US_AC10V4.0si_V16.03.10.09_multi_TDE01.bin.extracted/squashfs-root/bin/cfm",
+    "danger_funcs": [
+      "strcpy",
+      "fgets"
+    ],
+    "input_funcs": [
+      "fgets"
+    ],
+    "arch": "Mips",
+    "score": 4
+  },
+  {
+    "path": "_US_AC10V4.0si_V16.03.10.09_multi_TDE01.bin.extracted/squashfs-root/bin/flash",
+    "danger_funcs": [],
+    "input_funcs": [
+      "flash_read",
+      "read"
+    ],
+    "arch": "Mips",
+    "score": 4
+  },
+  {
+    "path": "_US_AC10V4.0si_V16.03.10.09_multi_TDE01.bin.extracted/squashfs-root/bin/igmp_query",
+    "danger_funcs": [
+      "sprintf",
+      "vsprintf"
+    ],
+    "input_funcs": [
+      "recvfrom"
+    ],
+    "arch": "Mips",
+    "score": 4
+  },
+  {
+    "path": "_US_AC10V4.0si_V16.03.10.09_multi_TDE01.bin.extracted/squashfs-root/bin/monitor",
+    "danger_funcs": [
+      "execvp",
+      "system_sleep"
+    ],
+    "input_funcs": [
+      "cm_io_read"
+    ],
+    "arch": "Mips",
+    "score": 4
+  },
+  {
+    "path": "_US_AC10V4.0si_V16.03.10.09_multi_TDE01.bin.extracted/squashfs-root/bin/single_led",
+    "danger_funcs": [
+      "system_sleep",
+      "fgets"
+    ],
+    "input_funcs": [
+      "fgets"
+    ],
+    "arch": "Mips",
+    "score": 4
+  },
+  {
+    "path": "_US_AC10V4.0si_V16.03.10.09_multi_TDE01.bin.extracted/squashfs-root/bin/wdtctl",
+    "danger_funcs": [],
+    "input_funcs": [
+      "getopt",
+      "read"
+    ],
+    "arch": "Mips",
+    "score": 4
+  },
+  {
+    "path": "_US_AC10V4.0si_V16.03.10.09_multi_TDE01.bin.extracted/squashfs-root/bin/arpbrocast",
+    "danger_funcs": [],
+    "input_funcs": [
+      "getopt"
+    ],
+    "arch": "Mips",
+    "score": 2
+  },
+  {
+    "path": "_US_AC10V4.0si_V16.03.10.09_multi_TDE01.bin.extracted/squashfs-root/bin/query_version",
+    "danger_funcs": [
+      "sprintf",
+      "strcpy"
+    ],
+    "input_funcs": [],
+    "arch": "Mips",
+    "score": 2
+  },
+  {
+    "path": "_US_AC10V4.0si_V16.03.10.09_multi_TDE01.bin.extracted/squashfs-root/bin/ucloud_v2",
+    "danger_funcs": [],
+    "input_funcs": [
+      "getopt_long"
+    ],
+    "arch": "Mips",
+    "score": 2
+  },
+  {
+    "path": "_US_AC10V4.0si_V16.03.10.09_multi_TDE01.bin.extracted/squashfs-root/lib/libnl-genl-3.so.200.16.1",
+    "danger_funcs": [],
+    "input_funcs": [
+      "nl_recvmsgs"
+    ],
+    "arch": "Mips",
+    "score": 2
+  },
+  {
+    "path": "_US_AC10V4.0si_V16.03.10.09_multi_TDE01.bin.extracted/squashfs-root/lib/modules/fast_l2.ko",
+    "danger_funcs": [],
+    "input_funcs": [
+      "seq_read"
+    ],
+    "arch": "Mips",
+    "score": 2
+  },
+  {
+    "path": "_US_AC10V4.0si_V16.03.10.09_multi_TDE01.bin.extracted/squashfs-root/lib/modules/gpio.ko",
+    "danger_funcs": [
+      "sprintf",
+      "system_wq"
+    ],
+    "input_funcs": [],
+    "arch": "Mips",
+    "score": 2
+  },
+  {
+    "path": "_US_AC10V4.0si_V16.03.10.09_multi_TDE01.bin.extracted/squashfs-root/lib/modules/mac_group.ko",
+    "danger_funcs": [],
+    "input_funcs": [
+      "simple_read_from_buffer"
+    ],
+    "arch": "Mips",
+    "score": 2
+  },
+  {
+    "path": "_US_AC10V4.0si_V16.03.10.09_multi_TDE01.bin.extracted/squashfs-root/lib/modules/phy_check.ko",
+    "danger_funcs": [
+      "system_wq",
+      "sprintf"
+    ],
+    "input_funcs": [],
+    "arch": "Mips",
+    "score": 2
+  },
+  {
+    "path": "_US_AC10V4.0si_V16.03.10.09_multi_TDE01.bin.extracted/squashfs-root/bin/pservice_tool",
+    "danger_funcs": [
+      "monitor_system"
+    ],
+    "input_funcs": [],
+    "arch": "Mips",
+    "score": 1
+  },
+  {
+    "path": "_US_AC10V4.0si_V16.03.10.09_multi_TDE01.bin.extracted/squashfs-root/lib/modules/wifi_led.ko",
+    "danger_funcs": [
+      "system_wq"
+    ],
+    "input_funcs": [],
+    "arch": "Mips",
+    "score": 1
+  }
+]

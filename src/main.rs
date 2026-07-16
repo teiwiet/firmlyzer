@@ -1,8 +1,8 @@
 mod analyzer;
-mod harness;
-mod fuzzer;
-mod mutator;
 mod extractor;
+mod fuzzer;
+mod harness;
+mod mutator;
 
 use std::env;
 use std::fs;
